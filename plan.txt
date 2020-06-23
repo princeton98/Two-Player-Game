@@ -1,0 +1,29 @@
+Nouns/Classes
+  - Players
+  - Questions
+  - Game
+
+  Question
+    - Then, perform question (question method)
+
+Players
+  - lives counter, initially 3 
+  - lost_life method
+    - removes one life from player
+
+Game 
+  - Method for current_player
+  - activate question class
+  - Wait for response (gets.chomp)
+      - if the answer is correct
+        - response prompt (positive)
+        - display points for both players
+        - switch player
+      - else if answer is incorrect
+        - response prompt (negative)
+        - Other player loses a life
+        - display points for both players
+        - switch player
+      -contain the game loop, reask a new question until one player loses all lives
+  - game over method (game class)
+    - when one player loses all their lives, responds with the winner with the other player's score
